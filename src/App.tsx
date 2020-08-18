@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App: React.FC = () => {
+  enum Color {
+    Red = -20,
+    Green = 22,
+    Blue,
+  }
+  let a: Color = Color.Red
+  let b: Color = Color.Green
+  let c: Color = Color.Blue
+  let colorName: string = Color[22]
+
+  console.log(a, b, c, colorName)
+  return <h1>Hi world!</h1>
 }
 
-export default App;
+export default App
